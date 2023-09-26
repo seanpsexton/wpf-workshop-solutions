@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Unit3_Examples_DataBinding
+namespace Exercise_3_DataBinding_Solution
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -23,11 +23,18 @@ namespace Unit3_Examples_DataBinding
         public MainWindow()
         {
             InitializeComponent();
+            this.DataContext = InitializeViewModel();
+        }
 
-            this.DataContext = new Thing()
+        private Person InitializeViewModel()
+        {
+            var person = new Person()
             {
-                Name = "Bob"
+                FirstName = "Anders",
+                LastName = "Hejlsberg"
             };
+
+            return person;
         }
     }
 }

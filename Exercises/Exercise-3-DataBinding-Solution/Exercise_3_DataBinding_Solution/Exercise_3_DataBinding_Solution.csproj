@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{92720D63-F4A3-40B2-89BB-FD807E4D171D}</ProjectGuid>
+    <ProjectGuid>{687884C5-F2CD-4725-96A8-C125945265ED}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Unit3_Examples_DataBinding</RootNamespace>
-    <AssemblyName>Unit3_Examples_DataBinding</AssemblyName>
+    <RootNamespace>Exercise_3_DataBinding_Solution</RootNamespace>
+    <AssemblyName>Exercise_3_DataBinding_Solution</AssemblyName>
     <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -55,6 +55,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Person.cs" />
     <Compile Include="ViewModelBase.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -70,7 +71,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Thing.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

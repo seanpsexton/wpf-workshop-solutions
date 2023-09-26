@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Unit3_Examples_DataBinding
+namespace Exercise_3_DataBinding_Solution
 {
     public class Person : ViewModelBase
     {
