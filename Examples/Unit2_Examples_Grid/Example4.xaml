@@ -1,0 +1,29 @@
+﻿<Window x:Class="Unit2_Examples_Grid.Example4"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Unit2_Examples_Grid"
+        mc:Ignorable="d"
+        Title="Example 4 - Auto Sizing" Height="450" Width="800">
+
+    <Grid ShowGridLines="True">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="25"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Grid.Row="0" Grid.Column="0" Text="1st row, 1st col"/>
+        <TextBlock Grid.Row="0" Grid.Column="1" Text="1st row, 2nd col" Margin="10,0"/>
+        <TextBlock Grid.Row="0" Grid.Column="2" Text="1st row, 3rd col"/>
+        
+        <TextBlock Grid.Row="1" Grid.Column="0" Text="2nd row, 1st col"/>
+        <TextBlock Grid.Row="1" Grid.Column="1" Text="2nd row, 2nd col" Margin="10,0"/>
+        <TextBlock Grid.Row="1" Grid.Column="2" Text="2nd row, 3rd col"/>
+    </Grid>
+</Window>
