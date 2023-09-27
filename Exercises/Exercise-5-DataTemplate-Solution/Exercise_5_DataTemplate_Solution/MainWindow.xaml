@@ -1,0 +1,34 @@
+﻿<Window x:Class="Exercise_5_DataTemplate_Solution.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Exercise_5_DataTemplate_Solution"
+        mc:Ignorable="d"
+        Title="Exercise 5 - Data Template" Height="450" Width="800">
+    
+    <Grid ShowGridLines="False">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+
+        <ListBox Grid.Column="0"
+                 Margin="10"
+                 
+                 ItemsSource="{Binding People}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="{Binding ImageSource}" Height="100"/>
+                        <StackPanel Margin="10,0">
+                            <TextBlock Text="{Binding FullName}" FontWeight="Bold" />
+                            <TextBlock Text="{Binding Dates}"/>
+                            <TextBlock Text="{Binding KnownFor}" FontStyle="Italic"/>
+                        </StackPanel>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Grid>
+</Window>
