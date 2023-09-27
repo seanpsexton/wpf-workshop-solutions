@@ -1,0 +1,47 @@
+﻿<Window x:Class="Exercise_4_BindingToList_Solution.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Exercise_4_BindingToList_Solution"
+        mc:Ignorable="d"
+        Title="Exercise 4 - Binding to List" Height="450" Width="800">
+    
+    <Grid ShowGridLines="False">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+
+        <ListBox Grid.Column="0"
+                 Margin="10"
+                 ItemsSource="{Binding People}"
+                 SelectedItem="{Binding SelectedPerson}"/>
+
+        <StackPanel Grid.Column="1"
+                    Margin="10">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock FontWeight="Bold" Text="Name: "
+                           VerticalAlignment="Center"/>
+                <TextBlock Text="{Binding SelectedPerson.FirstName}"
+                           Margin="10,5"
+                           VerticalAlignment="Center"/>
+                <TextBlock Text="{Binding SelectedPerson.LastName}"
+                           Margin="2,5"
+                           VerticalAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock FontWeight="Bold" Text="Lived: "
+                           VerticalAlignment="Center"/>
+                <TextBlock Text="{Binding SelectedPerson.Birth}"
+                           Margin="8,5,0,5"
+                           VerticalAlignment="Center"/>
+                <TextBlock Text=" - "
+                           VerticalAlignment="Center"/>
+                <TextBlock Text="{Binding SelectedPerson.Death}"
+                           Margin="2,5"
+                           VerticalAlignment="Center"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
