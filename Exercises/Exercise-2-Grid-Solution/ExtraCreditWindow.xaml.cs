@@ -18,13 +18,11 @@ namespace Exercise_2_Grid_Solution
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class ExtraCreditWindow : Window
     {
-        public MainWindow()
+        public ExtraCreditWindow()
         {
             InitializeComponent();
-            var win2 = new ExtraCreditWindow();
-            win2.Show();
         }
     }
 }
