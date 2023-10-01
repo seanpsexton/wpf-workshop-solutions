@@ -55,10 +55,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="MainViewModel_Fancy.cs" />
     <Compile Include="MainViewModel.cs" />
+    <Compile Include="Exercise.xaml.cs">
+      <DependentUpon>Exercise.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Person_Fancy.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="ViewModelBase.cs" />
-    <Page Include="MainWindow.xaml">
+    <Page Include="Exercise.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Exercise_Fancy.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -66,8 +75,8 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
+    <Compile Include="Exercise_Fancy.xaml.cs">
+      <DependentUpon>Exercise_Fancy.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>

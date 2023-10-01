@@ -6,19 +6,21 @@ using System.Threading.Tasks;
 
 namespace Exercise_5_DataTemplate_Solution
 {
-    public class Person : ViewModelBase
+    public class Person_Fancy : ViewModelBase
     {
         private string firstName;
         private string lastName;
         private int birth;
         private int death;
+        private string knownFor;
 
-        public Person(string firstName, string lastName, int birth, int death)
+        public Person_Fancy(string firstName, string lastName, int birth, int death, string knownFor)
         {
             FirstName = firstName;
             LastName = lastName;
             Birth = birth;
             Death = death;
+            KnownFor = knownFor;
         }
 
         public string FirstName
@@ -45,7 +47,17 @@ namespace Exercise_5_DataTemplate_Solution
             set => SetValue(ref death, value);
         }
 
+        public string KnownFor
+        {
+            get => knownFor;
+            set => SetValue(ref knownFor, value);
+        }
+
+        public string FullName => $"{firstName} {LastName}";
+
         public string Dates => $"({Birth} - {Death})";
+
+        public string ImageSource => $"pack://application:,,,/Exercise_5_DataTemplate_Solution;component/Images/{LastName}.jpg";
 
         public override string ToString()
         {

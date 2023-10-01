@@ -1,11 +1,11 @@
-﻿<Window x:Class="Exercise_5_DataTemplate_Solution.MainWindow"
+﻿<Window x:Class="Exercise_5_DataTemplate_Solution.Exercise_Fancy"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Exercise_5_DataTemplate_Solution"
         mc:Ignorable="d"
-        Title="Exercise 5 - Data Template" Height="450" Width="800">
+        Title="Exercise 5 - Fancy" Height="450" Width="800">
     
     <Grid ShowGridLines="False">
         <Grid.ColumnDefinitions>
@@ -15,7 +15,6 @@
 
         <ListBox Grid.Column="0"
                  Margin="10"
-                 
                  ItemsSource="{Binding People}">
             <ListBox.ItemTemplate>
                 <DataTemplate>
