@@ -11,8 +11,8 @@
         <Button x:Name="myButton" 
                 Content="Click Me"
                 Padding="10,7"
-                HorizontalAlignment="Left">
-        </Button>
+                HorizontalAlignment="Left"/>
+
         <TextBlock x:Name="myTextBlock" Text="This is some text"/>
     </StackPanel>
 </Window>

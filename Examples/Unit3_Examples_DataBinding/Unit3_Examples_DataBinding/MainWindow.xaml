@@ -15,7 +15,7 @@
         <TextBox MinWidth="150"
                  Margin="10,0"
                  VerticalAlignment="Top"
-                 Text="{Binding Name}"/>
+                 Text="{Binding Name, UpdateSourceTrigger=PropertyChanged}"/>
         
         <Button Content="Click Me"
                 Margin="10,0"

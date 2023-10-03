@@ -24,7 +24,7 @@ namespace Unit3_Examples_DataBinding
         {
             InitializeComponent();
 
-            this.DataContext = new Thing()
+            DataContext = new Thing()
             {
                 Name = "Bob"
             };

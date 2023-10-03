@@ -23,7 +23,7 @@
                         <StackPanel Orientation="Vertical">
                             <StackPanel Orientation="Horizontal" Margin="0">
                                 <TextBlock Text="{Binding FirstName}" />
-                                <TextBlock Text="{Binding LastName}" 
+                                <TextBlock Text="{Binding LastName}"
                                            Margin="10,0,0,0"
                                            FontWeight="Bold"/>
                             </StackPanel>
