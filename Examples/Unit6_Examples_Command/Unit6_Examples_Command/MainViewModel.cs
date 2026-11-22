@@ -15,7 +15,7 @@ namespace Unit6_Examples_Command
         public MainViewModel()
         {
             myCommand = new DelegateCommand(MyExecute, MyCanExecute);
-            //    (_) => MessageBox.Show("Hello MTS"),
+            //    (_) => MessageBox.Show("Oh dear"),
             //    (_) => true);
         }
 

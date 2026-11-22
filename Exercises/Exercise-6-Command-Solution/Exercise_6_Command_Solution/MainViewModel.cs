@@ -16,7 +16,7 @@ namespace Exercise_6_Command_Solution
         public MainViewModel()
         {
             myCommand = new DelegateCommand(
-                (_) => MessageBox.Show("Hello MTS"),
+                (_) => MessageBox.Show("Hello everybody"),
                 (_) => CanMessage);
         }
 

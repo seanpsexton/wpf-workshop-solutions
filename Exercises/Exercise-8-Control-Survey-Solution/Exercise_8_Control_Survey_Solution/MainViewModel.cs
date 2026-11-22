@@ -16,7 +16,7 @@ namespace Exercise_8_Control_Survey_Solution
         public MainViewModel()
         {
             myCommand = new DelegateCommand(
-                (_) => MessageBox.Show("Hello MTS"),
+                (_) => MessageBox.Show("Friends, Romans"),
                 (_) => true);
 
             dogs = new List<Dog>()
